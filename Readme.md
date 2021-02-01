@@ -56,13 +56,7 @@ Out put should be root@f7cd0e227d47:/app# parquet-tools show hashes.pq
 | 7ec7b87b5fd618f6dd6f1539be208e2013487c52baf60580399c767289055bf7 |
 +------------------------------------------------------------------+
 
-Out put should be root@f7cd0e227d47:/app# parquet-tools show data.pq
-+--------------------+-------------+--------------+---------------+--------------+
-| file_name          |   file_size |   word_count |   unique_word | today_date   |
-|--------------------+-------------+--------------+---------------+--------------|
-| sample_file_0.txt  |      371240 |        32025 |         29449 | 2021-02-01   |
-....
-....
+try it root@f7cd0e227d47:/app# parquet-tools show data.pq
 ## Git local auth with username and password
     1. git remote set-url origin https://username:password@github.com/alokd31999/gen_files_meta_data.git
-    2. Note : This is public repo so other users not need any login and password to clone
+    2. Note : This is a public repo so other users does not require any login and password to clone
