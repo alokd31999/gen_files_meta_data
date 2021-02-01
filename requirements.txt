@@ -1,0 +1,4 @@
+pyspark==2.4.7
+parquet-tools
+requests
+bs4
