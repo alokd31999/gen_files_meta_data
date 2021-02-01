@@ -19,6 +19,9 @@ RUN pip freeze > requirements.txt
 
 RUN ["apt-get", "update"]
 RUN ["apt-get", "-y", "install", "vim"]
+RUN ["apt-get", "-y", "install", "dos2unix"]
+
+RUN dos2unix
 
 # Set the working directory to /app
 WORKDIR /app
@@ -30,6 +33,7 @@ ADD . /app
 # Install any needed packages specified in requirements.txt
 
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN dos2unix /app/file_metadata.sh
 
 RUN mkdir /app/logs
 
